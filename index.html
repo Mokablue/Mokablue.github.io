@@ -20,13 +20,20 @@
 			str = prompt("请输入你的名字,有惊喜！不过你输啥也都是你啦！");
 			console.log(str);
 			window.onload = function() {
-				if (str != null && str !="" &&(str == "猪猪"||str =="鲍晓霞"||str =="晓霞"||str =="霞"||str =="笨猪猪"||str =="傻猪猪"||str =="宝子"||str =="宝宝")||str =="宝"||str =="宝贝"||str =="bxx"||str =="xx"||str =="x"||str =="霞mai") {
+				if (str != null && str !="" &&(str == "猪猪"||str =="鲍晓霞"||str =="晓霞"||str =="霞"||str =="笨猪猪"||str =="傻猪猪"||str =="宝子"||str =="宝宝")||str =="宝"||str =="宝贝") {
 					//document.getElementById("ai").innerHTML=str;
 					var all = document.getElementsByClassName("ai"); //返回的是数组
 					for (var i = 0; i < all.length; i++) {
 						all[i].innerHTML = str;
 					}
 				}
+				else
+				{
+					var alls = document.getElementsByClassName("bi"); //返回的是数组
+					for (var i = 0; i < all.length; i++) {
+						alls[i].innerHTML = str;
+				}
+			}
 			}
 		</script>
 	</head>
@@ -40,7 +47,11 @@
 				<div id="text">
 					<div id="code">
 						<font color="black" size="4"><b><i>
-						<span class="say"><span class ="ai">鲍晓霞 </span>，因为是你，所以我想说下面的话</span><br>
+						<span class="say"><span class ="bi">同学你谁啊，怎么还看人家羞羞的话呢</span></span><br>
+						<span class="say"> </span><br>
+						<span class="say"><span class ="bi">行吧就让你看一下吧，我喜欢的人</span></span><br>
+						<span class="say"> </span><br>
+						<span class="say"><span class ="ai">宝子</span>，因为是你，所以我想说下面的话</span><br>
 						<span class="say"> </span><br>
 						<span class="say">我们相识不久，但我想要一直走下去！</span><br>
 						<span class="say"> </span><br>
@@ -48,21 +59,21 @@
 						<span class="say"> </span><br>
 						<span class="say">我想对你好，让你也开始依赖我。</span><br>
 						<span class="say"> </span><br>
-						<span class="say">睁开我的眼睛，我的眼里只有你！</span><br>
+						<span class="say">睁开我的眼睛，我的眼里只有你</span><br>
 						<span class="say"> </span><br>
-						<span class="say">闭上我的眼睛，我的心里只有你！</span><br>
+						<span class="say">闭上我的眼睛，我的心里只有你</span><br>
 						<span class="say"> </span><br>
-						<span class="say"><span class ="ai">鲍晓霞 </span>，跟我走吧，我赚钱养你！</span><br>
+						<span class="say"><span class ="ai">宝子 </span>，跟我走吧，我赚钱养你</span><br>
 						<span class="say"></span><br>
-						<span class="say">套路都是我学的，但爱你是真的！ </span><br>
+						<span class="say">套路都是我学的，但爱你是真的 </span><br>
 						<span class="say"> </span><br>
-						<span class="say"> -- 爱你哟！--</span>
+						<span class="say"> -- 爱你哟，你的猪给你做的--</span>
 						</i></b>
 						</font>
 					</div>
 				</div>
 				<div id="clock-box">
-					<span><font color="#666666"><span class ="ai">鲍晓霞 </span>，我们在一起已经是</font></span>
+					<span><font color="#666666"><span class ="ai">宝子 </span>，我们在一起已经是</font></span>
 					<div id="clock"></div>
 				</div>
 				<canvas id="canvas" width="1100" height="680"></canvas>
